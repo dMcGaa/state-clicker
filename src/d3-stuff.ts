@@ -1,7 +1,7 @@
 // import * as d3 from 'd3';
 import * as us from '../assets/us.json';
 
-export function setup(data) {
+export function setup(emit) {
 console.log("hello d3")
 
 var width = 960,
@@ -54,11 +54,13 @@ x = centroid[0];
 y = centroid[1];
 k = 4;
 centered = d;
+emit("d3 map selected", d)
 } else {
 x = width / 2;
 y = height / 2;
 k = 1;
 centered = null;
+emit("d3 map de-selected", d)
 }
 
 g.selectAll("path")

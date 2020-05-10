@@ -13,11 +13,13 @@ app.route('*', mainView)
 app.mount('div.choo')
 
 function mainView(state, emit) {
-  d3stuff.setup({})
+  d3stuff.setup(emit)
   return html`
   <div>hello</div>
   `
 }
 
 function mainStore(state, emitter) {
+emitter.on("d3 map selected", () => { })
+emitter.on("d3 map de-selected", () => { })
 }
