@@ -1,5 +1,6 @@
 // import * as d3 from 'd3';
 import * as us from '../assets/us.json';
+// import * as us from '../assets/us-topo.json';
 
 export function setup(emit) {
 console.log("hello d3")
@@ -15,7 +16,7 @@ var projection = d3.geo.albersUsa()
 var path = d3.geo.path()
 .projection(projection);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select(".d3").append("svg")
 .attr("width", width)
 .attr("height", height);
 
