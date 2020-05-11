@@ -1,6 +1,7 @@
 # State Clicker
 
-## DEMO
+## [DEMO](https://state-clicker.web.app/)
+Hosted demo of app [HERE](https://state-clicker.web.app/)
 
 ## Reference
 - <https://www.census.gov/programs-surveys/geography/data/interactive-maps.html>
@@ -14,3 +15,5 @@
 
 ### Useful Utilities
 - <https://mapshaper.org/> - given geoJSON or topoJSON
+- <https://favicon.io/favicon-generator/> - favicon, #55F & #FFF
+- <https://parceljs.org/cli.html> - parcel cli, for build with no source maps
